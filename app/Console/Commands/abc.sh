@@ -1,0 +1,1 @@
+# cd /home/manish/workspace/ServeSmileFoundation && php artisan word:day

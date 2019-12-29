@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+ <script type="text/javascript">
+ 	$(function(){
+ 		$("#ddde").on('submit' , function(e){
+ 			e.preventDefault()
+ 			alert("pok")
+ 			$.ajax({
+ 				url:
+ 				method:
+ 				data: new FormData(this),
+ 					  Headers:{
+ 					  	'X-CSRF-TOKEN': "{{ csrf_token() }}"
+ 					  }
+ 					  processData=false,
+ 					  contentData=false,
+ 					  success: function(obj){
+ 					  	alert("success")
+ 					  }
+ 					  error: function(obj){
+ 					  	alert("error")
+ 					  }
+
+ 			})
+ 		})
+ 	})
+ </script>
+</body>
+</html>
